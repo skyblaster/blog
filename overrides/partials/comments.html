@@ -1,5 +1,10 @@
 {% if page.meta.comments %}
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+
+  <!-- Giscus container -->
+  <div class="giscus"></div>
+
+  <!-- Giscus script -->
   <script src="https://giscus.app/client.js"
         data-repo="skyblaster/blog-giscus"
         data-repo-id="R_kgDOQugjug"
@@ -15,6 +20,16 @@
         data-loading="lazy"
         crossorigin="anonymous"
         async>
+  </script>
+
+  <!-- Strip trailing slash from pathname (except for root "/") -->
+  <script>
+    if (window.location.pathname !== '/' && window.location.pathname.endsWith('/')) {
+      Object.defineProperty(window.location, 'pathname', {
+        writable: false,
+        value: window.location.pathname.slice(0, -1)
+      });
+    }
   </script>
 
   <!-- Synchronize Giscus theme with palette -->
