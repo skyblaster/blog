@@ -1,5 +1,6 @@
 ---
-draft: false 
+draft: false
+comments: true
 icon: simple/gnometerminal
 date: 2025-12-09 
 title: Posh-ACME Article
