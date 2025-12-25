@@ -2,6 +2,7 @@
 draft: false 
 icon: simple/gnometerminal
 date: 2025-12-09 
+title: Posh-ACME Article
 ---
 
 # Test
@@ -17,7 +18,3 @@ New-PACertificate '*.example.com' -AcceptTOS
 ```powershell title="copy_certs.ps1"
 cp (Get-PACertificate).Cert /var/mcc
 ```
-
-## Sub Heading
-
-### Sub sub heading
