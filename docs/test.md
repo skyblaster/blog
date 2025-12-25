@@ -4,8 +4,6 @@ comments: true
 icon: simple/gnometerminal
 date: 2025-12-09 
 title: Posh-ACME Article
-og:
-  title: Posh-ACME Article
 ---
 
 # Test
